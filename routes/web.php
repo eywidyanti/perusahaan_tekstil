@@ -39,7 +39,7 @@ Route::get('/produksi', function () {
 
 Route::get('/y', function () {
     //$users = \App\Models\User::get();
-    $pics = \App\Models\Pic::get();
+    $pics = \App\Models\Pic2::get();
     // $pic2s = \App\Models\Pic2::get();
 
     return view('distribusi/db2', compact('pics'));
@@ -58,7 +58,7 @@ Route::get('/distribusi', function () {
 Route::get('/z', function () {
     // $users = \App\Models\User::get();
     // $pics = \App\Models\Pic::get();
-    $pic2s = \App\Models\Pic2::get();
+    $pic2s = \App\Models\Pic::get();
 
     return view('delivery/db3', compact('pic2s'));
 });
